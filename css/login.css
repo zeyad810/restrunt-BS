@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../imgs/login.jpg) no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    background-size: 100% 100%;
+}
+    /* .img11{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        
+    } */
+.container1{
+    width: 90%;
+    margin: auto;
+}
+.section-padding{
+    padding: 70px 10px;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 700;
+    color: #efc84a;
+}
+.log{
+    background-color: #efc84a;
+    color: #000160;
+    font-weight: 900;
+}
+header .container1{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    
+}
+header nav{
+    position: relative;
+}
+header nav .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    display: none;
+}
+header nav .icon span{
+    
+    margin-bottom: 5px;
+    
+}
+header nav .icon span:first-child{
+    width: 100%;
+    height: 2px;
+    background-color: #efc84a;
+}
+header nav .icon span:nth-child(2){
+    width: 60%;
+    height: 2px;
+    background-color: #efc84a;
+}
+header nav .icon span:last-child{
+    width: 100%;
+    height: 1.5px;
+    background-color: #efc84a;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #efc84a;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.4s;
+}
+nav ul li a:hover{
+    background-color: #2E4374;
+    color: #fffff1;
+    
+}
+.cont{
+    height: 90.5vh;
+    /* background-color: rgb(214, 23, 23); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.warrp{
+    width: 420px;
+    background-color:rgba(255, 255, 255,0.1);
+    backdrop-filter: blur(20px);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255,.2);
+    
+}
+.warrp h1{
+    text-align: center;
+    font-size: 36px;
+    padding: 15px 0;
+    color: #efc84a;
+    
+}
+.warrp .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 0 15px;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #000160;
+    border-radius: 40px;
+    color: #000160;
+    font-size: 16px;
+}
+.input-box input::placeholder{
+    color: #000160;
+}
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50% );
+    color: #000160;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #fff;
+}
+.remember-forgot a{
+    text-decoration:none ;
+    color: #fff;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.remember-forgot label input {
+    accent-color:#fff;
+
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #efc84a;
+}
+.btn a{
+    text-decoration: none;
+    color: #000160;
+    font-size: 20px;
+    display: block;
+}
+@media screen and (max-width:600px) {
+    header nav .icon{
+        display: flex;
+    }
+    header nav:hover ul{
+        display: flex;
+        transition: all 0.5s;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: #efc84a 2px solid;
+        width: 150px;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        border-radius: 10px;
+        background-color: #000160;
+        display: none;
+        transition: all 0.5s;
+
+    }
+    nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #efc84a;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 25px;
+        transition: all 0.5s;
+
+    }
+    nav ul li a:hover{
+        width: 100%;
+        background-color: #efc84a;
+        padding-inline:50px ;
+        transition: all 0.5s;
+
+    }
+    .logo a{
+        font-size: 25px;
+    }
+    /*hero section start  */
+    .info{
+        width: 100%;
+        text-align: center;
+    }
+    .info h1{
+        font-size: 25px;
+        color: #000160;
+        padding: 8px 0;
+    }
+    .info h1 span{
+        font-size: 30px;
+    }
+    .info p{
+        line-height: 1.5;
+        font-size: 14px;
+        color: #000160;
+        padding: 8px 0;
+    }
+    .info a{
+        display: inline-block;
+        
+        padding: 10px 25px;
+        font-weight: 400;
+        border-radius: 25px;
+        font-size: 15px;
+        box-shadow: 0 0 20px #2E4374;
+        transition: 0.7s linear ;
+    }
+    .hero-img{
+        width: 100% ;
+    }
+    .form a{
+        font-size: 15px;
+        margin-right: 15px;
+        text-decoration: none;
+        color: #000160;
+        padding: 10px;
+        display: inline-block;
+    }   
+}
+@media screen and (min-width:601px) and (max-width:769px){
+    .logo a{
+        font-size: 20px;
+    }
+    nav ul {
+        gap: 0px;
+    }
+    nav ul li a{
+        font-size: 15px;
+        
+    }
+    /* end header */
+    .info{
+        width: 40%;
+    }
+    .info h1{
+        font-size: 30px;
+        padding: 10px 0;
+        }
+        .info p{
+            font-size: 10px;
+            line-height: 1.6;
+
+        }
+        .info a{
+            margin-top: 10px;
+            padding: 5px 20px ;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .hero-img{
+            width: 60%;
+        }
+}
